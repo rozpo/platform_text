@@ -13,6 +13,9 @@ and the Flutter guide for
 
 A Flutter package to make your text selectable for web and non-selectable for native builds.
 
+[![pipeline status](https://gitlab.com/rozpo.dev/platform_text/badges/main/pipeline.svg)](https://gitlab.com/rozpo.dev/platform_text/-/commits/main)
+[![coverage report](https://gitlab.com/rozpo.dev/platform_text/badges/main/coverage.svg)](https://gitlab.com/rozpo.dev/platform_text/-/commits/main)
+
 ## Features
 
 This package contains PlatformText widget as a wrapper for Text and SelectableText widgets. During application run this widget provide wrapped widgets depends on platform respectively.
