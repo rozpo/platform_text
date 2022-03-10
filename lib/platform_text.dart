@@ -3,6 +3,7 @@ library platform_text;
 import 'dart:ui' as ui show BoxHeightStyle, BoxWidthStyle, TextHeightBehavior;
 
 import 'package:flutter/foundation.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 class PlatformText extends StatelessWidget {
