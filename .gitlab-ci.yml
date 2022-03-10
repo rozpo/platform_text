@@ -16,7 +16,6 @@
 # Docker image link: https://hub.docker.com/r/cirrusci/flutter/tags
 stages:
   - test
-  - badges
 
 #================================================
 # test stage
@@ -49,18 +48,3 @@ test:
       - $CI_PROJECT_DIR/coverage
     reports:
       junit: report.xml
-
-#================================================
-# badges stage
-badges:
-  stage: badges
-  image: python:latest
-  variables:
-    PRIVATE_TOKEN: $ACCESS_TOKEN
-  script:
-    - pip install badges-gitlab
-    - badges-gitlab
-  artifacts:
-    when: always
-    paths:
-      - public/badges/*.svg
