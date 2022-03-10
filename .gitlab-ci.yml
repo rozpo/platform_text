@@ -13,6 +13,9 @@
 #
 # For more information, see: https://docs.gitlab.com/ee/ci/yaml/index.html#stages
 
+# https://hub.docker.com/r/google/dart
+image: "mobiledevops/flutter-sdk-image:2.0.1"
+
 stages:
   - build
   - test
@@ -30,7 +33,6 @@ build-job:
 # test stage
 code_quality:
   stage: test
-  image: "cirrusci/flutter:1.22.5"
   before_script:
     - pub global activate dart_code_metrics
     - export PATH="$PATH:$HOME/.pub-cache/bin"
@@ -42,7 +44,6 @@ code_quality:
 
 test:
   stage: test
-  image: "cirrusci/flutter:1.22.5"
   before_script:
     - pub global activate junitreport
     - export PATH="$PATH:$HOME/.pub-cache/bin"
