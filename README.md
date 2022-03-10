@@ -15,6 +15,7 @@ A Flutter package to make your text selectable for web and non-selectable for na
 
 [![pipeline status](https://gitlab.com/rozpo.dev/platform_text/badges/main/pipeline.svg)](https://gitlab.com/rozpo.dev/platform_text/-/commits/main)
 [![coverage report](https://gitlab.com/rozpo.dev/platform_text/badges/main/coverage.svg)](https://gitlab.com/rozpo.dev/platform_text/-/commits/main)
+[![latest release](https://gitlab.com/rozpo.dev/platform_text/-/badges/release.svg)](https://gitlab.com/rozpo.dev/platform_text/-/releases)
 
 ## Features
 
