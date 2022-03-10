@@ -16,17 +16,7 @@
 # Docker image link: https://hub.docker.com/r/google/dart
 
 stages:
-  # - TODO activate - build
   - test
-  # - TODO activate - deploy
-
-#================================================
-# build stage
-build-job:
-  stage: build
-  script:
-    - echo "Compiling the code..."
-    - echo "Compile complete."
 
 #================================================
 # test stage
@@ -59,12 +49,3 @@ test:
       - $CI_PROJECT_DIR/coverage
     reports:
       junit: report.xml
-
-#================================================
-# deploy stage
-
-deploy-job:
-  stage: deploy
-  script:
-    - echo "Deploying application..."
-    - echo "Application successfully deployed."
