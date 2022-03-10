@@ -15,8 +15,7 @@ void main() {
       expect(platformText.data, value);
     });
 
-    testWidgets('Check build method',
-        (WidgetTester tester) async {
+    testWidgets('Check build method', (WidgetTester tester) async {
       // given
       const String value = 'text_value';
       PlatformText platformText = const PlatformText(value);
@@ -31,6 +30,27 @@ void main() {
 
       // then
       expect(find.widgetWithText(PlatformText, value), findsOneWidget);
+    });
+
+    test('Check widget assertion error while minLines = 0', () {
+      // given / when / then
+      expect(() {
+        PlatformText('data', minLines: 0);
+      }, throwsAssertionError);
+    });
+
+    test('Check widget assertion error while maxLines = 0', () {
+      // given / when / then
+      expect(() {
+        PlatformText('data', maxLines: 0);
+      }, throwsAssertionError);
+    });
+
+    test('Check widget assertion error while minLines > maxLines', () {
+      // given / when / then
+      expect(() {
+        PlatformText('data', minLines: 2, maxLines: 1);
+      }, throwsAssertionError);
     });
   });
 }
