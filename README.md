@@ -11,6 +11,8 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
 
+## PlatformText
+
 A Flutter package to make your text selectable for web and non-selectable for native builds.
 
 [![pipeline status](https://gitlab.com/rozpo.dev/platform_text/badges/main/pipeline.svg)](https://gitlab.com/rozpo.dev/platform_text/-/commits/main)
@@ -19,22 +21,60 @@ A Flutter package to make your text selectable for web and non-selectable for na
 
 ## Features
 
-This package contains PlatformText widget as a wrapper for Text and SelectableText widgets. During application run this widget provide wrapped widgets depends on platform respectively.
-- Native -> Text
-- Web -> SelectableText
+PlatformText package returns Text or SelectableText widgets depends on running platform respectively.
+- Native -> [Text](https://api.flutter.dev/flutter/widgets/Text-class.html)
+- Web -> [SelectableText](https://api.flutter.dev/flutter/material/SelectableText-class.html)
 
 ## Getting started
 
-To use package include platform_text in your pubspec.yaml file.
+To use package please follow official installation guide. [see more...](https://pub.dev/packages/platform_text/install)
 
 ## Usage
 
-Use PlatformText widget with one required String parameter.
+PlatformText widget supports two constructors as in Text or SelectableText widgets classes.
+
+To migrate existing code just replace Text/SelectableText widget with PlatformWidget.
+
+- Create a platform text widget.
 
 ```dart
 PlatformText('Hello mom!');
 ```
 
+- Create a platform text widget with a InlineSpan.
+
+```dart
+PlatformText.rich(
+  TextSpan(
+    text: 'Hello',
+    children: <TextSpan>[
+      TextSpan(
+        text: ' beautiful ',
+        style: TextStyle(fontStyle: FontStyle.italic),
+      ),
+      TextSpan(
+        text: 'mom!',
+        style: TextStyle(fontWeight: FontWeight.bold),
+      ),
+    ],
+  ),
+),
+```
+## Support
+
+If you like my package you can buy me a coffee.
+
+<style>
+img{
+    border-radius:3%;
+}
+</style>
+
+<a href="https://www.buymeacoffee.com/rozpo.dev"><img src="https://img.buymeacoffee.com/api/?url=aHR0cHM6Ly9jZG4uYnV5bWVhY29mZmVlLmNvbS91cGxvYWRzL3Byb2ZpbGVfcGljdHVyZXMvMjAyMi8wMy9GYXBDamRkWUltZkFPSElsLnBuZ0AzMDB3XzBlLndlYnA=&creator=Piotr+Rozpo%C5%84czyk&design_code=1&design_color=%23ff813f&slug=rozpo.dev" width="300" height=150></a>
+
 ## Additional information
 
-In case of any issues please contact me via https://rozpo.dev
+- Package maintainer: [rozpo.dev](https://rozpo.dev)
+- Technical writer: [rawid]()
+- Source code: [gitlab](https://gitlab.com/rozpo.dev/platform_text)
+- Bug reporting: [issues](https://gitlab.com/rozpo.dev/platform_text/-/issues)

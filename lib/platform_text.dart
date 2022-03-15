@@ -12,9 +12,8 @@ import 'package:flutter/material.dart';
 ///
 /// {@category Class}
 class PlatformText extends StatelessWidget {
-  // constructors
+  /// Creates a platform text widget.
   const PlatformText(
-    // Common fields
     String this.data, {
     Key? key,
     this.style,
@@ -26,11 +25,9 @@ class PlatformText extends StatelessWidget {
     this.semanticsLabel,
     this.textHeightBehavior,
     this.textWidthBasis,
-    // Text fields only
     this.locale,
     this.softWrap,
     this.overflow,
-    // SelectableText fields only
     this.focusNode,
     this.showCursor = false,
     this.autofocus = false,
@@ -62,7 +59,56 @@ class PlatformText extends StatelessWidget {
             ),
         super(key: key);
 
+  /// Creates a platform text widget with a [InlineSpan].
+  const PlatformText.rich(
+    TextSpan this.textSpan, {
+    Key? key,
+    this.focusNode,
+    this.style,
+    this.strutStyle,
+    this.textAlign,
+    this.textDirection,
+    this.textScaleFactor,
+    this.showCursor = false,
+    this.autofocus = false,
+    ToolbarOptions? toolbarOptions,
+    this.minLines,
+    this.maxLines,
+    this.cursorWidth = 2.0,
+    this.cursorHeight,
+    this.cursorRadius,
+    this.cursorColor,
+    this.selectionHeightStyle = ui.BoxHeightStyle.tight,
+    this.selectionWidthStyle = ui.BoxWidthStyle.tight,
+    this.dragStartBehavior = DragStartBehavior.start,
+    this.enableInteractiveSelection = true,
+    this.selectionControls,
+    this.onTap,
+    this.scrollPhysics,
+    this.semanticsLabel,
+    this.textHeightBehavior,
+    this.textWidthBasis,
+    this.onSelectionChanged,
+    this.locale,
+    this.softWrap,
+    this.overflow,
+  })  : assert(maxLines == null || maxLines > 0),
+        assert(minLines == null || minLines > 0),
+        assert(
+          (maxLines == null) || (minLines == null) || (maxLines >= minLines),
+          "minLines can't be greater than maxLines",
+        ),
+        data = null,
+        toolbarOptions = toolbarOptions ??
+            const ToolbarOptions(
+              selectAll: true,
+              copy: true,
+            ),
+        super(key: key);
+
+  // =============
   // Common fields
+  // =============
 
   /// The text to display.
   final String? data;
@@ -97,7 +143,9 @@ class PlatformText extends StatelessWidget {
   /// {@macro flutter.painting.textPainter.textWidthBasis}
   final TextWidthBasis? textWidthBasis;
 
+  // ================
   // Text fields only
+  // ================
 
   /// Used to select a font when the same Unicode character can
   /// be rendered differently, depending on the locale.
@@ -109,7 +157,9 @@ class PlatformText extends StatelessWidget {
   /// How visual overflow should be handled.
   final TextOverflow? overflow;
 
+  // ==========================
   // SelectableText fields only
+  // ==========================
 
   /// The text to display as a [TextSpan].
   final TextSpan? textSpan;
@@ -172,9 +222,18 @@ class PlatformText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (kIsWeb) {
-      return SelectableText(data!, style: style, textAlign: textAlign);
+      if (data != null) {
+        return SelectableText(data!, style: style, textAlign: textAlign);
+      } else {
+        return SelectableText.rich(textSpan!,
+            style: style, textAlign: textAlign);
+      }
     } else {
-      return Text(data!, style: style, textAlign: textAlign);
+      if (data != null) {
+        return Text(data!, style: style, textAlign: textAlign);
+      } else {
+        return Text.rich(textSpan!, style: style, textAlign: textAlign);
+      }
     }
   }
 }
