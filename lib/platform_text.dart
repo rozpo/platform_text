@@ -12,6 +12,9 @@ import 'package:flutter/material.dart';
 ///
 /// {@category Class}
 class PlatformText extends StatelessWidget {
+  /// Only for UTs
+  final bool webTest;
+
   /// Creates a platform text widget.
   const PlatformText(
     String this.data, {
@@ -45,6 +48,7 @@ class PlatformText extends StatelessWidget {
     this.onTap,
     this.scrollPhysics,
     this.onSelectionChanged,
+    @visibleForTesting this.webTest = false,
   })  : assert(maxLines == null || maxLines > 0),
         assert(minLines == null || minLines > 0),
         assert(
@@ -92,6 +96,7 @@ class PlatformText extends StatelessWidget {
     this.locale,
     this.softWrap,
     this.overflow,
+    @visibleForTesting this.webTest = false,
   })  : assert(maxLines == null || maxLines > 0),
         assert(minLines == null || minLines > 0),
         assert(
