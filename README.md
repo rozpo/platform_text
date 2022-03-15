@@ -15,8 +15,8 @@ and the Flutter guide for
 
 A Flutter package to make your text selectable for web and non-selectable for native builds.
 
-[![pipeline status](https://gitlab.com/rozpo.dev/platform_text/badges/main/pipeline.svg)](https://gitlab.com/rozpo.dev/platform_text/-/commits/main)
-[![coverage report](https://gitlab.com/rozpo.dev/platform_text/badges/main/coverage.svg)](https://gitlab.com/rozpo.dev/platform_text/-/commits/main)
+[![pipeline status](https://gitlab.com/rozpo.dev/platform_text/badges/main/pipeline.svg)](https://gitlab.com/rozpo.dev/platform_text)
+[![coverage report](https://gitlab.com/rozpo.dev/platform_text/badges/main/coverage.svg)](https://gitlab.com/rozpo.dev/platform_text/-/jobs)
 [![latest release](https://gitlab.com/rozpo.dev/platform_text/-/badges/release.svg)](https://gitlab.com/rozpo.dev/platform_text/-/releases)
 
 ## Features
@@ -64,13 +64,7 @@ PlatformText.rich(
 
 If you like my package you can buy me a coffee.
 
-<style>
-img{
-    border-radius:3%;
-}
-</style>
-
-<a href="https://www.buymeacoffee.com/rozpo.dev"><img src="https://img.buymeacoffee.com/api/?url=aHR0cHM6Ly9jZG4uYnV5bWVhY29mZmVlLmNvbS91cGxvYWRzL3Byb2ZpbGVfcGljdHVyZXMvMjAyMi8wMy9GYXBDamRkWUltZkFPSElsLnBuZ0AzMDB3XzBlLndlYnA=&creator=Piotr+Rozpo%C5%84czyk&design_code=1&design_color=%23ff813f&slug=rozpo.dev" width="300" height=150></a>
+<a href="https://www.buymeacoffee.com/rozpo.dev"><img src="https://img.buymeacoffee.com/api/?url=aHR0cHM6Ly9jZG4uYnV5bWVhY29mZmVlLmNvbS91cGxvYWRzL3Byb2ZpbGVfcGljdHVyZXMvMjAyMi8wMy9GYXBDamRkWUltZkFPSElsLnBuZ0AzMDB3XzBlLndlYnA=&creator=Piotr+Rozpo%C5%84czyk&design_code=1&design_color=%23ff813f&slug=rozpo.dev" width="500" height=250></a>
 
 ## Additional information
 

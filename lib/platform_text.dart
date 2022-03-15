@@ -226,7 +226,7 @@ class PlatformText extends StatelessWidget {
   /// Build method with logic responsible for returnig proper widget depends on running platform.
   @override
   Widget build(BuildContext context) {
-    if (kIsWeb) {
+    if (kIsWeb || webTest) {
       if (data != null) {
         return SelectableText(data!, style: style, textAlign: textAlign);
       } else {
