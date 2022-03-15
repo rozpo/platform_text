@@ -64,7 +64,7 @@ PlatformText.rich(
 
 If you like my package you can buy me a coffee.
 
-<a href="https://www.buymeacoffee.com/rozpo.dev"><img src="https://img.buymeacoffee.com/api/?url=aHR0cHM6Ly9jZG4uYnV5bWVhY29mZmVlLmNvbS91cGxvYWRzL3Byb2ZpbGVfcGljdHVyZXMvMjAyMi8wMy9GYXBDamRkWUltZkFPSElsLnBuZ0AzMDB3XzBlLndlYnA=&creator=Piotr+Rozpo%C5%84czyk&design_code=1&design_color=%23ff813f&slug=rozpo.dev" width="500" height=250></a>
+<a href="https://www.buymeacoffee.com/rozpo.dev"><img src="https://img.buymeacoffee.com/api/?url=aHR0cHM6Ly9jZG4uYnV5bWVhY29mZmVlLmNvbS91cGxvYWRzL3Byb2ZpbGVfcGljdHVyZXMvMjAyMi8wMy9GYXBDamRkWUltZkFPSElsLnBuZ0AzMDB3XzBlLndlYnA=&creator=Piotr+Rozpo%C5%84czyk&design_code=1&design_color=%23ff813f&slug=rozpo.dev" width="452" height=227></a>
 
 ## Additional information
 
