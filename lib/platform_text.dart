@@ -8,14 +8,39 @@ import 'package:flutter/material.dart';
 
 /// Main class for platform_text package.
 ///
-/// This widget returns Text or SelectableText depends on running plaform.
+/// [PlatformText] returns [Text] or [SelectableText] widget depending on the platform it's running on.
+///
+/// Native → [Text]
+///
+/// Web → [SelectableText]
 ///
 /// {@category Class}
 class PlatformText extends StatelessWidget {
   /// Only for UTs
   final bool webTest;
 
-  /// Creates a platform text widget.
+  /// Creates a [PlatformText] text widget.
+  ///
+  /// ## Features
+  ///
+  /// [PlatformText] returns [Text] or [SelectableText] widget depending on the platform it's running on.
+  ///
+  /// Native → [Text]
+  ///
+  /// Web → [SelectableText]
+  ///
+  /// ## Usage
+  ///
+  /// {@tool snippet}
+  ///
+  /// Create a [PlatformText] widget.
+  ///
+  /// ```dart
+  /// PlatformText('Hello mom!');
+  /// ```
+  ///
+  /// {@end-tool}
+  ///
   const PlatformText(
     String this.data, {
     Key? key,
@@ -64,6 +89,41 @@ class PlatformText extends StatelessWidget {
         super(key: key);
 
   /// Creates a platform text widget with a [InlineSpan].
+  ///
+  /// ## Features
+  ///
+  /// [PlatformText] returns [Text] or [SelectableText] widget depending on the platform it's running on.
+  ///
+  /// Native → [Text]
+  ///
+  /// Web → [SelectableText]
+  ///
+  /// ## Usage
+  ///
+  /// {@tool snippet}
+  ///
+  /// Create a [PlatformText] widget with the [InlineSpan].
+  ///
+  /// ```dart
+  /// PlatformText.rich(
+  ///   TextSpan(
+  ///     text: 'Hello',
+  ///     children: <TextSpan>[
+  ///       TextSpan(
+  ///         text: ' beautiful ',
+  ///         style: TextStyle(fontStyle: FontStyle.italic),
+  ///       ),
+  ///       TextSpan(
+  ///         text: 'mom!',
+  ///         style: TextStyle(fontWeight: FontWeight.bold),
+  ///       ),
+  ///     ],
+  ///   ),
+  /// );
+  /// ```
+  ///
+  /// {@end-tool}
+  /// 
   const PlatformText.rich(
     TextSpan this.textSpan, {
     Key? key,
