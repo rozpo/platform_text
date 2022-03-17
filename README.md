@@ -21,27 +21,27 @@ A Flutter package to make your text selectable for web and non-selectable for na
 
 ## Features
 
-PlatformText package returns Text or SelectableText widgets depends on running platform respectively.
-- Native -> [Text](https://api.flutter.dev/flutter/widgets/Text-class.html)
-- Web -> [SelectableText](https://api.flutter.dev/flutter/material/SelectableText-class.html)
+[__PlatformText__](https://pub.dev/documentation/platform_text/latest/platform_text/PlatformText-class.html) returns __Text__ or __SelectableText__ widget depending on the platform it's running on.
+- Native &rarr; [Text](https://api.flutter.dev/flutter/widgets/Text-class.html)
+- Web &rarr; [SelectableText](https://api.flutter.dev/flutter/material/SelectableText-class.html)
 
 ## Getting started
 
-To use package please follow official installation guide. [see more...](https://pub.dev/packages/platform_text/install)
+Follow official installation guide. [see more...](https://pub.dev/packages/platform_text/install)
 
 ## Usage
 
-PlatformText widget supports two constructors as in Text or SelectableText widgets classes.
+__PlatformText__ supports two constructors/widget classes: __Text__ and __SelectableText__.
 
-To migrate existing code just replace Text/SelectableText widget with PlatformWidget.
+To migrate existing code just replace __Text__/__SelectableText__ widget with __PlatformText__.
 
-- Create a platform text widget.
+- Create a _PlatformText_ widget.
 
 ```dart
 PlatformText('Hello mom!');
 ```
 
-- Create a platform text widget with a InlineSpan.
+- Create a _PlatformText_ widget with a [InlineSpan](https://api.flutter.dev/flutter/painting/InlineSpan-class.html).
 
 ```dart
 PlatformText.rich(
@@ -68,7 +68,7 @@ If you like my package you can buy me a coffee.
 
 ## Additional information
 
-- Package maintainer: [rozpo.dev](https://rozpo.dev)
-- Technical writer: [rawid]()
-- Source code: [gitlab](https://gitlab.com/rozpo.dev/platform_text)
+- Package maintainer: _Piotr Rozpończyk_ [(rozpo.dev)](https://rozpo.dev)
+- Technical writer: _Dawid Ratusz_
 - Bug reporting: [issues](https://gitlab.com/rozpo.dev/platform_text/-/issues)
+- Source code: [gitlab](https://gitlab.com/rozpo.dev/platform_text)
