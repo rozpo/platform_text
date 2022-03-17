@@ -2,17 +2,17 @@
 
 * Added new constructor.
 * Updated conditional logic.
-* Expanded documentation.
+* Updated documentation.
 * README updated.
 
 # 0.0.2
 
-* Include example code.
-* Update documentation.
+* Included example code.
+* Updated documentation.
 
 # 0.0.1+1
 
-* README update.
+* README updated.
 
 # 0.0.1
 
