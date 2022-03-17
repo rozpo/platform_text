@@ -1,3 +1,10 @@
+# 0.1.0
+
+* Added new constructor.
+* Updated conditional logic.
+* Expanded documentation.
+* README updated.
+
 # 0.0.2
 
 * Include example code.

@@ -83,8 +83,7 @@ void main() {
   });
 
   group('PlatformText.rich()', () {
-    testWidgets('Check build method for native',
-        (WidgetTester tester) async {
+    testWidgets('Check build method for native', (WidgetTester tester) async {
       // given
       const String value1 = 'text_value1';
       const String value2 = 'text_value2';
@@ -120,7 +119,7 @@ void main() {
       expect(find.byType(Text), findsOneWidget);
     });
 
-        testWidgets('Check build method for web', (WidgetTester tester) async {
+    testWidgets('Check build method for web', (WidgetTester tester) async {
       // given
       const String value1 = 'text_value1';
       const String value2 = 'text_value2';

@@ -123,7 +123,7 @@ class PlatformText extends StatelessWidget {
   /// ```
   ///
   /// {@end-tool}
-  /// 
+  ///
   const PlatformText.rich(
     TextSpan this.textSpan, {
     Key? key,

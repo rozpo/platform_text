@@ -1,6 +1,6 @@
 name: platform_text
 description: A Flutter package to make your text selectable for web and non-selectable for native builds.
-version: 0.0.2
+version: 0.1.0
 homepage: 'https://rozpo.dev'
 
 environment:
