@@ -288,16 +288,103 @@ class PlatformText extends StatelessWidget {
   Widget build(BuildContext context) {
     if (kIsWeb || webTest) {
       if (data != null) {
-        return SelectableText(data!, style: style, textAlign: textAlign);
+        return SelectableText(
+          data!,
+          autofocus: autofocus,
+          cursorColor: cursorColor,
+          cursorHeight: cursorHeight,
+          cursorRadius: cursorRadius,
+          cursorWidth: cursorWidth,
+          dragStartBehavior: dragStartBehavior,
+          enableInteractiveSelection: enableInteractiveSelection,
+          focusNode: focusNode,
+          key: key,
+          maxLines: maxLines,
+          minLines: minLines,
+          onSelectionChanged: onSelectionChanged,
+          onTap: onTap,
+          scrollPhysics: scrollPhysics,
+          selectionControls: selectionControls,
+          selectionHeightStyle: selectionHeightStyle,
+          selectionWidthStyle: selectionWidthStyle,
+          semanticsLabel: semanticsLabel,
+          showCursor: showCursor,
+          strutStyle: strutStyle,
+          style: style,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          textHeightBehavior: textHeightBehavior,
+          textScaleFactor: textScaleFactor,
+          textWidthBasis: textWidthBasis,
+          toolbarOptions: toolbarOptions,
+        );
       } else {
-        return SelectableText.rich(textSpan!,
-            style: style, textAlign: textAlign);
+        return SelectableText.rich(
+          textSpan!,
+          autofocus: autofocus,
+          cursorColor: cursorColor,
+          cursorHeight: cursorHeight,
+          cursorRadius: cursorRadius,
+          cursorWidth: cursorWidth,
+          dragStartBehavior: dragStartBehavior,
+          enableInteractiveSelection: enableInteractiveSelection,
+          focusNode: focusNode,
+          key: key,
+          maxLines: maxLines,
+          minLines: minLines,
+          onSelectionChanged: onSelectionChanged,
+          onTap: onTap,
+          scrollPhysics: scrollPhysics,
+          selectionControls: selectionControls,
+          selectionHeightStyle: selectionHeightStyle,
+          selectionWidthStyle: selectionWidthStyle,
+          semanticsLabel: semanticsLabel,
+          showCursor: showCursor,
+          strutStyle: strutStyle,
+          style: style,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          textHeightBehavior: textHeightBehavior,
+          textScaleFactor: textScaleFactor,
+          textWidthBasis: textWidthBasis,
+          toolbarOptions: toolbarOptions,
+        );
       }
     } else {
       if (data != null) {
-        return Text(data!, style: style, textAlign: textAlign);
+        return Text(
+          data!,
+          key: key,
+          locale: locale,
+          maxLines: maxLines,
+          overflow: overflow,
+          semanticsLabel: semanticsLabel,
+          softWrap: softWrap,
+          strutStyle: strutStyle,
+          style: style,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          textHeightBehavior: textHeightBehavior,
+          textScaleFactor: textScaleFactor,
+          textWidthBasis: textWidthBasis,
+        );
       } else {
-        return Text.rich(textSpan!, style: style, textAlign: textAlign);
+        return Text.rich(
+          textSpan!,
+          key: key,
+          locale: locale,
+          maxLines: maxLines,
+          overflow: overflow,
+          semanticsLabel: semanticsLabel,
+          softWrap: softWrap,
+          strutStyle: strutStyle,
+          style: style,
+          textAlign: textAlign,
+          textDirection: textDirection,
+          textHeightBehavior: textHeightBehavior,
+          textScaleFactor: textScaleFactor,
+          textWidthBasis: textWidthBasis,
+        );
       }
     }
   }
