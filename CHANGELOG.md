@@ -1,3 +1,7 @@
+# 0.2.0
+
+* Mapped all positional arguments in wraped constructors.
+
 # 0.1.0
 
 * Added new constructor.
